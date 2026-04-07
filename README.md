@@ -168,7 +168,7 @@ Put the required ROS packages in the same `m2cs_player_ws/src` and rebuild.
 
 ### 8.2 No image or point cloud during playback
 
-- Verify dataset layout and filenames in Section 5
+- Verify dataset layout and filenames in Section 6
 - Check whether corresponding sensor checkboxes are enabled
 - Check RViz topics and fixed frame
 

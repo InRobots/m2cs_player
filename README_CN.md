@@ -168,7 +168,7 @@ roslaunch m2cs_player m2cs_player.launch
 
 ### 8.2 运行后没有图像或点云
 
-- 检查数据目录结构与文件名是否符合第 5 节
+- 检查数据目录结构与文件名是否符合第 6 节
 - 检查对应传感器复选框是否勾选
 - 检查 RViz 话题与 fixed frame 配置
 
