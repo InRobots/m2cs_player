@@ -23,7 +23,16 @@
 
 ---
 
-## 2. 环境依赖
+## 2. 数据集下载
+
+你可以通过以下链接下载数据集：
+
+- [google](https://drive.google.com/drive/folders/1r73SmBBm7jIRvlrtqm2g_w5VX1Zy4SFH?usp=sharing)
+- [baidu](https://pan.baidu.com/share/init?surl=JSHXd3FhYsI3LD7PCgw-KQ)（提取码：`m2cs`）
+
+---
+
+## 3. 环境依赖
 
 建议环境：Ubuntu + ROS1（catkin 工作空间）。
 
@@ -51,42 +60,49 @@
 
 ---
 
-## 3. 编译
+## 4. 编译
 
-以下示例基于你当前工作空间：`/home/awesome/macs_player_ws`。
+建议按以下步骤在 catkin 工作空间中完成编译。
 
-先将仓库克隆到工作空间的 `src` 目录（临时链接占位）：
+1. 创建工作空间（如已存在可跳过）：
 
 ```bash
-cd /home/awesome/macs_player_ws/src
-git clone https://example.com/temporary/m2cs_player.git
+mkdir -p ~/m2cs_player_ws/src
 ```
 
-> 后续请将上面的占位链接替换为你的真实仓库地址。
+2. 在 `src` 目录克隆仓库：
 
 ```bash
-cd /home/awesome/macs_player_ws
+cd ~/m2cs_player_ws/src
+git clone https://github.com/InRobots/m2cs_player.git
+```
+
+3. 使用 catkin 编译：
+
+```bash
+cd ~/m2cs_player_ws
 catkin_make
 ```
+
+4. 加载工作空间环境：
 
 如果你使用 `zsh`：
 
 ```bash
-source /home/awesome/macs_player_ws/devel/setup.zsh
+source ~/m2cs_player_ws/devel/setup.zsh
 ```
 
 如果你使用 `bash`：
 
 ```bash
-source /home/awesome/macs_player_ws/devel/setup.bash
+source ~/m2cs_player_ws/devel/setup.bash
 ```
 
 ---
 
-## 4. 运行
+## 5. 运行
 
 ```bash
-source /home/awesome/macs_player_ws/devel/setup.zsh
 roslaunch m2cs_player m2cs_player.launch
 ```
 
@@ -98,7 +114,7 @@ roslaunch m2cs_player m2cs_player.launch
 
 ---
 
-## 5. 数据目录要求
+## 6. 数据目录要求
 
 在 GUI 中点击 **Load** 后，选择的数据根目录需包含至少以下内容：
 
@@ -129,7 +145,7 @@ roslaunch m2cs_player m2cs_player.launch
 
 ---
 
-## 6. GUI 使用说明
+## 7. GUI 使用说明
 
 1. 点击 **Load** 选择数据目录。
 2. 点击 **Play** 开始回放（再次点击可结束）。
@@ -144,7 +160,7 @@ roslaunch m2cs_player m2cs_player.launch
 
 ---
 
-## 7. 常见问题
+## 8. 常见问题
 
 ### 7.1 编译报找不到 `gwnav_ros_driver` 或 `livox_ros_driver`
 
@@ -163,7 +179,7 @@ catkin_make
 
 ---
 
-## 8. 相关文件
+## 9. 相关文件
 
 - UI：`src/mainwindow.ui`
 - 主窗口逻辑：`src/mainwindow.cpp`

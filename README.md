@@ -23,7 +23,16 @@ It also provides a GUI for play/pause/loop/stop-skip/sensor toggles, and uses `m
 
 ---
 
-## 2. Dependencies
+## 2. Dataset Download
+
+You can download the dataset via the links below:
+
+- [google](https://drive.google.com/drive/folders/1r73SmBBm7jIRvlrtqm2g_w5VX1Zy4SFH?usp=sharing)
+- [baidu](https://pan.baidu.com/share/init?surl=JSHXd3FhYsI3LD7PCgw-KQ) (extract code: `m2cs`)
+
+---
+
+## 3. Dependencies
 
 Recommended environment: Ubuntu + ROS1 (catkin workspace).
 
@@ -51,42 +60,49 @@ The source includes these custom message packages. Make sure they are available 
 
 ---
 
-## 3. Build
+## 4. Build
 
-The commands below use your current workspace: `/home/awesome/macs_player_ws`.
+Use the following workflow in your catkin workspace.
 
-First, clone the package into your workspace source folder (temporary URL placeholder):
+1. Create a workspace (skip if you already have one):
 
 ```bash
-cd /home/awesome/macs_player_ws/src
-git clone https://example.com/temporary/m2cs_player.git
+mkdir -p ~/m2cs_player_ws/src
 ```
 
-> Replace the placeholder URL above with your actual repository URL later.
+2. Clone the repository into `src`:
 
 ```bash
-cd /home/awesome/macs_player_ws
+cd ~/m2cs_player_ws/src
+git clone https://github.com/InRobots/m2cs_player.git
+```
+
+3. Build with catkin:
+
+```bash
+cd ~/m2cs_player_ws
 catkin_make
 ```
 
-If you use `zsh`:
+4. Source the workspace environment:
+
+For `zsh`:
 
 ```bash
-source /home/awesome/macs_player_ws/devel/setup.zsh
+source ~/m2cs_player_ws/devel/setup.zsh
 ```
 
-If you use `bash`:
+For `bash`:
 
 ```bash
-source /home/awesome/macs_player_ws/devel/setup.bash
+source ~/m2cs_player_ws/devel/setup.bash
 ```
 
 ---
 
-## 4. Run
+## 5. Run
 
 ```bash
-source /home/awesome/macs_player_ws/devel/setup.zsh
 roslaunch m2cs_player m2cs_player.launch
 ```
 
@@ -98,7 +114,7 @@ This launch file starts:
 
 ---
 
-## 5. Dataset Directory Layout
+## 6. Dataset Directory Layout
 
 After clicking **Load** in the GUI, the selected dataset root should contain at least:
 
@@ -129,7 +145,7 @@ After clicking **Load** in the GUI, the selected dataset root should contain at 
 
 ---
 
-## 6. GUI Usage
+## 7. GUI Usage
 
 1. Click **Load** and select the dataset root folder.
 2. Click **Play** to start playback (click again to end).
@@ -144,7 +160,7 @@ After clicking **Load** in the GUI, the selected dataset root should contain at 
 
 ---
 
-## 7. Troubleshooting
+## 8. Troubleshooting
 
 ### 7.1 Build error: missing `gwnav_ros_driver` or `livox_ros_driver`
 
@@ -163,7 +179,7 @@ catkin_make
 
 ---
 
-## 8. Key Files
+## 9. Key Files
 
 - UI: `src/mainwindow.ui`
 - Main window logic: `src/mainwindow.cpp`
