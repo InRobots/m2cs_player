@@ -162,29 +162,15 @@ roslaunch m2cs_player m2cs_player.launch
 
 ## 8. 常见问题
 
-### 7.1 编译报找不到 `gwnav_ros_driver` 或 `livox_ros_driver`
+### 8.1 编译报找不到 `gwnav_ros_driver` 或 `livox_ros_driver`
 
-将对应 ROS 包放到同一 `catkin_ws/src` 下后重新编译：
+将对应 ROS 包放到同一 `m2cs_player_ws/src` 下后重新编译。
 
-```bash
-cd /home/awesome/macs_player_ws
-catkin_make
-```
-
-### 7.2 运行后没有图像或点云
+### 8.2 运行后没有图像或点云
 
 - 检查数据目录结构与文件名是否符合第 5 节
 - 检查对应传感器复选框是否勾选
 - 检查 RViz 话题与 fixed frame 配置
-
----
-
-## 9. 相关文件
-
-- UI：`src/mainwindow.ui`
-- 主窗口逻辑：`src/mainwindow.cpp`
-- 数据回放线程：`src/ROSThread.cpp`
-- 启动文件：`launch/m2cs_player.launch`
 
 ---
 

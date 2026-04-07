@@ -162,29 +162,15 @@ After clicking **Load** in the GUI, the selected dataset root should contain at 
 
 ## 8. Troubleshooting
 
-### 7.1 Build error: missing `gwnav_ros_driver` or `livox_ros_driver`
+### 8.1 Build error: missing `gwnav_ros_driver` or `livox_ros_driver`
 
-Put the required ROS packages in the same `catkin_ws/src` and rebuild:
+Put the required ROS packages in the same `m2cs_player_ws/src` and rebuild.
 
-```bash
-cd /home/awesome/macs_player_ws
-catkin_make
-```
-
-### 7.2 No image or point cloud during playback
+### 8.2 No image or point cloud during playback
 
 - Verify dataset layout and filenames in Section 5
 - Check whether corresponding sensor checkboxes are enabled
 - Check RViz topics and fixed frame
-
----
-
-## 9. Key Files
-
-- UI: `src/mainwindow.ui`
-- Main window logic: `src/mainwindow.cpp`
-- Playback thread: `src/ROSThread.cpp`
-- Launch file: `launch/m2cs_player.launch`
 
 ---
 
