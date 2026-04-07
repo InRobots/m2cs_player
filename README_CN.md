@@ -28,7 +28,7 @@
 你可以通过以下链接下载数据集：
 
 - [google](https://drive.google.com/drive/folders/1r73SmBBm7jIRvlrtqm2g_w5VX1Zy4SFH?usp=sharing)
-- [baidu](https://pan.baidu.com/share/init?surl=JSHXd3FhYsI3LD7PCgw-KQ)（提取码：`m2cs`）
+- [baidu](https://pan.baidu.com/s/1iVqkIFc7AsaEojbos7S80w)（提取码：`m2cs`）
 
 ---
 

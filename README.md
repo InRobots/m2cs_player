@@ -28,7 +28,7 @@ It also provides a GUI for play/pause/loop/stop-skip/sensor toggles, and uses `m
 You can download the dataset via the links below:
 
 - [google](https://drive.google.com/drive/folders/1r73SmBBm7jIRvlrtqm2g_w5VX1Zy4SFH?usp=sharing)
-- [baidu](https://pan.baidu.com/share/init?surl=JSHXd3FhYsI3LD7PCgw-KQ) (extract code: `m2cs`)
+- [baidu](https://pan.baidu.com/s/1iVqkIFc7AsaEojbos7S80w) (extract code: `m2cs`)
 
 ---
 
